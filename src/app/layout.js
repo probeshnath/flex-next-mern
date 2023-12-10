@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from './components/Header'
 import {Mulish} from 'next/font/google'
+import Footer from './components/Footer'
 
 const mulis = Mulish({
   weight:"400",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className={mulis.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
