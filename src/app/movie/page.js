@@ -2,8 +2,11 @@ import Link from 'next/link'
 import React from 'react'
 import MovieCard from '../components/MovieCard';
 import styles from '@/app/styles/common.module.css'
+import { resolve } from 'styled-jsx/css';
 
 const Movie = async () => {
+
+  await new Promise(resolve => setTimeout(resolve,2000) )
 
   const url = process.env.RAPID_KEY;
   const options = {
