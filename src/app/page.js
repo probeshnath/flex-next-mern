@@ -1,9 +1,10 @@
+import HeroSection from "./components/HeroSection"
 
 
 const page = () => {
   return (
     <div>
-      <h1>Hello next js app</h1>
+      <HeroSection />
     </div>
   )
 }
